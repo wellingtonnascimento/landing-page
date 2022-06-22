@@ -318,7 +318,8 @@
       "Landing-page": {
         "required": [
           "id",
-          "logo"
+          "logo",
+          "sectionModules"
         ],
         "properties": {
           "id": {
@@ -721,6 +722,49 @@
               }
             }
           },
+          "sectionModules": {
+            "type": "object",
+            "required": [
+              "id",
+              "title",
+              "modules"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "modules": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id",
+                    "title",
+                    "subtitle",
+                    "description"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "title": {
+                      "type": "string"
+                    },
+                    "subtitle": {
+                      "type": "string"
+                    },
+                    "description": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "minItems": 2
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -728,6 +772,9 @@
         }
       },
       "NewLanding-page": {
+        "required": [
+          "sectionModules"
+        ],
         "properties": {
           "header": {
             "type": "object",
@@ -1056,6 +1103,49 @@
                     }
                   }
                 }
+              }
+            }
+          },
+          "sectionModules": {
+            "type": "object",
+            "required": [
+              "id",
+              "title",
+              "modules"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "modules": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id",
+                    "title",
+                    "subtitle",
+                    "description"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "title": {
+                      "type": "string"
+                    },
+                    "subtitle": {
+                      "type": "string"
+                    },
+                    "description": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "minItems": 2
               }
             }
           },
