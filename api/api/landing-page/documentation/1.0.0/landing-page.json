@@ -590,7 +590,8 @@
             "type": "object",
             "required": [
               "id",
-              "title"
+              "title",
+              "techIcons"
             ],
             "properties": {
               "id": {
@@ -678,6 +679,39 @@
                           "type": "string"
                         }
                       }
+                    },
+                    "title": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "sectionConcepts": {
+            "type": "object",
+            "required": [
+              "id",
+              "title"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "concepts": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id",
+                    "title"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
                     },
                     "title": {
                       "type": "string"
@@ -894,7 +928,8 @@
             "type": "object",
             "required": [
               "id",
-              "title"
+              "title",
+              "techIcons"
             ],
             "properties": {
               "id": {
@@ -982,6 +1017,39 @@
                           "type": "string"
                         }
                       }
+                    },
+                    "title": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "sectionConcepts": {
+            "type": "object",
+            "required": [
+              "id",
+              "title"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "concepts": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id",
+                    "title"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
                     },
                     "title": {
                       "type": "string"

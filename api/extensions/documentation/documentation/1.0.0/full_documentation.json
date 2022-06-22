@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "06/21/2022 9:20:32 PM"
+    "x-generation-date": "06/21/2022 9:25:30 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -2861,7 +2861,8 @@
             "type": "object",
             "required": [
               "id",
-              "title"
+              "title",
+              "techIcons"
             ],
             "properties": {
               "id": {
@@ -2949,6 +2950,39 @@
                           "type": "string"
                         }
                       }
+                    },
+                    "title": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "sectionConcepts": {
+            "type": "object",
+            "required": [
+              "id",
+              "title"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "concepts": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id",
+                    "title"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
                     },
                     "title": {
                       "type": "string"
@@ -3165,7 +3199,8 @@
             "type": "object",
             "required": [
               "id",
-              "title"
+              "title",
+              "techIcons"
             ],
             "properties": {
               "id": {
@@ -3253,6 +3288,39 @@
                           "type": "string"
                         }
                       }
+                    },
+                    "title": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "sectionConcepts": {
+            "type": "object",
+            "required": [
+              "id",
+              "title"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "concepts": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id",
+                    "title"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
                     },
                     "title": {
                       "type": "string"
