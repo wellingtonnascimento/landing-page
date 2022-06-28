@@ -877,6 +877,9 @@
                     "description": {
                       "type": "string"
                     },
+                    "sectionReviews": {
+                      "type": "component"
+                    },
                     "published_at": {
                       "type": "string"
                     },
@@ -1386,6 +1389,9 @@
                     },
                     "description": {
                       "type": "string"
+                    },
+                    "sectionReviews": {
+                      "type": "component"
                     },
                     "published_at": {
                       "type": "string"
