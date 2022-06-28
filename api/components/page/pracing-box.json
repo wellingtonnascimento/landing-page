@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_page_pracing_boxes",
+  "info": {
+    "name": "pracingBox",
+    "icon": "dollar-sign"
+  },
+  "options": {},
+  "attributes": {
+    "totalPrice": {
+      "type": "integer",
+      "required": true
+    },
+    "numberInstallments": {
+      "type": "integer",
+      "required": true
+    },
+    "priceInstallment": {
+      "type": "integer",
+      "required": true
+    },
+    "benefits": {
+      "type": "string",
+      "required": true,
+      "default": "Create Items as bullet list"
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page.button",
+      "required": true
+    }
+  }
+}
