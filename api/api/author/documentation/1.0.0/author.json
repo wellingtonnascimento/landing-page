@@ -520,7 +520,8 @@
           "photo",
           "name",
           "role",
-          "socialLinks"
+          "socialLinks",
+          "description"
         ],
         "properties": {
           "id": {
@@ -629,6 +630,9 @@
               }
             }
           },
+          "description": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -639,7 +643,8 @@
         "required": [
           "name",
           "role",
-          "socialLinks"
+          "socialLinks",
+          "description"
         ],
         "properties": {
           "name": {
@@ -677,6 +682,9 @@
                 }
               }
             }
+          },
+          "description": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
