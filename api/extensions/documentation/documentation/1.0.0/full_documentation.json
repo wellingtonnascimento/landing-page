@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "06/28/2022 7:32:38 PM"
+    "x-generation-date": "06/28/2022 7:37:08 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -3322,6 +3322,45 @@
               }
             }
           },
+          "sectionFaq": {
+            "type": "object",
+            "required": [
+              "id",
+              "title",
+              "questions"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "questions": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id",
+                    "question",
+                    "answer"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "question": {
+                      "type": "string"
+                    },
+                    "answer": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "minItems": 2
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -3478,6 +3517,45 @@
                   }
                 },
                 "minItems": 4
+              }
+            }
+          },
+          "sectionFaq": {
+            "type": "object",
+            "required": [
+              "id",
+              "title",
+              "questions"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "questions": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id",
+                    "question",
+                    "answer"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "question": {
+                      "type": "string"
+                    },
+                    "answer": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "minItems": 2
               }
             }
           },
@@ -4058,6 +4136,9 @@
                     "sectionReviews": {
                       "type": "component"
                     },
+                    "sectionFaq": {
+                      "type": "component"
+                    },
                     "published_at": {
                       "type": "string"
                     },
@@ -4569,6 +4650,9 @@
                       "type": "string"
                     },
                     "sectionReviews": {
+                      "type": "component"
+                    },
+                    "sectionFaq": {
                       "type": "component"
                     },
                     "published_at": {
