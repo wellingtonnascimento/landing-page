@@ -765,6 +765,75 @@
               }
             }
           },
+          "sectionAgenda": {
+            "type": "object",
+            "required": [
+              "id",
+              "title",
+              "description"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              }
+            }
+          },
+          "pracingBox": {
+            "type": "object",
+            "required": [
+              "id",
+              "totalPrice",
+              "numberInstallments",
+              "priceInstallment",
+              "benefits",
+              "button"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "totalPrice": {
+                "type": "integer"
+              },
+              "numberInstallments": {
+                "type": "integer"
+              },
+              "priceInstallment": {
+                "type": "integer"
+              },
+              "benefits": {
+                "type": "string",
+                "default": "Create Items as bullet list"
+              },
+              "button": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "label",
+                  "url"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "label": {
+                    "type": "string",
+                    "default": "Comprar ",
+                    "maxLength": 20
+                  },
+                  "url": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -1146,6 +1215,75 @@
                   }
                 },
                 "minItems": 2
+              }
+            }
+          },
+          "sectionAgenda": {
+            "type": "object",
+            "required": [
+              "id",
+              "title",
+              "description"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              }
+            }
+          },
+          "pracingBox": {
+            "type": "object",
+            "required": [
+              "id",
+              "totalPrice",
+              "numberInstallments",
+              "priceInstallment",
+              "benefits",
+              "button"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "totalPrice": {
+                "type": "integer"
+              },
+              "numberInstallments": {
+                "type": "integer"
+              },
+              "priceInstallment": {
+                "type": "integer"
+              },
+              "benefits": {
+                "type": "string",
+                "default": "Create Items as bullet list"
+              },
+              "button": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "label",
+                  "url"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "label": {
+                    "type": "string",
+                    "default": "Comprar ",
+                    "maxLength": 20
+                  },
+                  "url": {
+                    "type": "string"
+                  }
+                }
               }
             }
           },
