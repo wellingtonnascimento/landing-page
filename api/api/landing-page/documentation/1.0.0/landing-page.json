@@ -834,6 +834,63 @@
               }
             }
           },
+          "sectionAboutUs": {
+            "type": "object",
+            "required": [
+              "id",
+              "title"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "authors": {
+                "type": "array",
+                "items": {
+                  "required": [
+                    "id",
+                    "photo",
+                    "name",
+                    "role",
+                    "socialLinks",
+                    "description"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "photo": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "role": {
+                      "type": "string"
+                    },
+                    "socialLinks": {
+                      "type": "component"
+                    },
+                    "description": {
+                      "type": "string"
+                    },
+                    "published_at": {
+                      "type": "string"
+                    },
+                    "created_by": {
+                      "type": "string"
+                    },
+                    "updated_by": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -1282,6 +1339,63 @@
                   },
                   "url": {
                     "type": "string"
+                  }
+                }
+              }
+            }
+          },
+          "sectionAboutUs": {
+            "type": "object",
+            "required": [
+              "id",
+              "title"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "authors": {
+                "type": "array",
+                "items": {
+                  "required": [
+                    "id",
+                    "photo",
+                    "name",
+                    "role",
+                    "socialLinks",
+                    "description"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "photo": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "role": {
+                      "type": "string"
+                    },
+                    "socialLinks": {
+                      "type": "component"
+                    },
+                    "description": {
+                      "type": "string"
+                    },
+                    "published_at": {
+                      "type": "string"
+                    },
+                    "created_by": {
+                      "type": "string"
+                    },
+                    "updated_by": {
+                      "type": "string"
+                    }
                   }
                 }
               }

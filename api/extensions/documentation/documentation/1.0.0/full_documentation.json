@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "06/28/2022 7:22:56 PM"
+    "x-generation-date": "06/28/2022 7:26:37 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -3800,6 +3800,63 @@
               }
             }
           },
+          "sectionAboutUs": {
+            "type": "object",
+            "required": [
+              "id",
+              "title"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "authors": {
+                "type": "array",
+                "items": {
+                  "required": [
+                    "id",
+                    "photo",
+                    "name",
+                    "role",
+                    "socialLinks",
+                    "description"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "photo": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "role": {
+                      "type": "string"
+                    },
+                    "socialLinks": {
+                      "type": "component"
+                    },
+                    "description": {
+                      "type": "string"
+                    },
+                    "published_at": {
+                      "type": "string"
+                    },
+                    "created_by": {
+                      "type": "string"
+                    },
+                    "updated_by": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -4248,6 +4305,63 @@
                   },
                   "url": {
                     "type": "string"
+                  }
+                }
+              }
+            }
+          },
+          "sectionAboutUs": {
+            "type": "object",
+            "required": [
+              "id",
+              "title"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "authors": {
+                "type": "array",
+                "items": {
+                  "required": [
+                    "id",
+                    "photo",
+                    "name",
+                    "role",
+                    "socialLinks",
+                    "description"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "photo": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "role": {
+                      "type": "string"
+                    },
+                    "socialLinks": {
+                      "type": "component"
+                    },
+                    "description": {
+                      "type": "string"
+                    },
+                    "published_at": {
+                      "type": "string"
+                    },
+                    "created_by": {
+                      "type": "string"
+                    },
+                    "updated_by": {
+                      "type": "string"
+                    }
                   }
                 }
               }
