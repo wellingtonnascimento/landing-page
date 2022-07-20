@@ -19,7 +19,13 @@
     "eslint-config-prettier"
   ],
   "rules": {
-    "prettier/prettier": ["error", {}, { "usePrettierrc": true }],
+    "prettier/prettier": [
+      "error",
+      {},
+      {
+        "usePrettierrc": true
+      }
+    ],
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
     "react/prop-types": "off",
@@ -29,6 +35,7 @@
       {
         "allowSingleExtends": true
       }
-    ]
+    ],
+    "react/react-in-jsx-scope": "off"
   }
 }
