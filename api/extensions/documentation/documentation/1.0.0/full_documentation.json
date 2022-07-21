@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "06/30/2022 8:54:37 PM"
+    "x-generation-date": "07/20/2022 9:24:07 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -3759,8 +3759,8 @@
               "totalPrice",
               "numberInstallments",
               "priceInstallment",
-              "benefits",
-              "button"
+              "button",
+              "benefits"
             ],
             "properties": {
               "id": {
@@ -3774,10 +3774,6 @@
               },
               "priceInstallment": {
                 "type": "integer"
-              },
-              "benefits": {
-                "type": "string",
-                "default": "Create Items as bullet list"
               },
               "button": {
                 "type": "object",
@@ -3799,6 +3795,9 @@
                     "type": "string"
                   }
                 }
+              },
+              "benefits": {
+                "type": "string"
               }
             }
           },
@@ -4416,8 +4415,8 @@
               "totalPrice",
               "numberInstallments",
               "priceInstallment",
-              "benefits",
-              "button"
+              "button",
+              "benefits"
             ],
             "properties": {
               "id": {
@@ -4431,10 +4430,6 @@
               },
               "priceInstallment": {
                 "type": "integer"
-              },
-              "benefits": {
-                "type": "string",
-                "default": "Create Items as bullet list"
               },
               "button": {
                 "type": "object",
@@ -4456,6 +4451,9 @@
                     "type": "string"
                   }
                 }
+              },
+              "benefits": {
+                "type": "string"
               }
             }
           },

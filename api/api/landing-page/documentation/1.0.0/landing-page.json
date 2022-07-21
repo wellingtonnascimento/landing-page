@@ -793,8 +793,8 @@
               "totalPrice",
               "numberInstallments",
               "priceInstallment",
-              "benefits",
-              "button"
+              "button",
+              "benefits"
             ],
             "properties": {
               "id": {
@@ -808,10 +808,6 @@
               },
               "priceInstallment": {
                 "type": "integer"
-              },
-              "benefits": {
-                "type": "string",
-                "default": "Create Items as bullet list"
               },
               "button": {
                 "type": "object",
@@ -833,6 +829,9 @@
                     "type": "string"
                   }
                 }
+              },
+              "benefits": {
+                "type": "string"
               }
             }
           },
@@ -1450,8 +1449,8 @@
               "totalPrice",
               "numberInstallments",
               "priceInstallment",
-              "benefits",
-              "button"
+              "button",
+              "benefits"
             ],
             "properties": {
               "id": {
@@ -1465,10 +1464,6 @@
               },
               "priceInstallment": {
                 "type": "integer"
-              },
-              "benefits": {
-                "type": "string",
-                "default": "Create Items as bullet list"
               },
               "button": {
                 "type": "object",
@@ -1490,6 +1485,9 @@
                     "type": "string"
                   }
                 }
+              },
+              "benefits": {
+                "type": "string"
               }
             }
           },
