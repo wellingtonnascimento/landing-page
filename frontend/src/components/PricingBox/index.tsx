@@ -24,7 +24,6 @@ const PricingBox = ({
       <S.DiscountPrice>{priceInstallment},90</S.DiscountPrice>
     </S.Prices>
 
-    {/* <S.Text dangerouslySetInnerHTML={{ __html: description }} /> */}
     <S.BenefitsList dangerouslySetInnerHTML={{ __html: benefits }} />
 
     <Button href={button.url} onClick={onClick} withPrice>
